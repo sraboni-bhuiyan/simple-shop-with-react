@@ -25,10 +25,9 @@ const Shop = () => {
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
                 saveCart.push(addedProduct);
-                console.log(addedProduct)
             }
         }
-        setCart(saveCart)
+        setCart(saveCart);
     } , [products]);
 
     const handleAddToCart = (product) => {
